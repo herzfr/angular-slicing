@@ -1,0 +1,50 @@
+img {
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+}
+
+p.large {
+    font-size: 16px !important;
+}
+
+
+p.text-image {
+    position: absolute;
+    background: #1a1a1a75;
+    bottom: 0;
+    width: 100%;
+    color: #FFF;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.text-button-content {
+    height: fit-content;
+    padding: 10px;
+    justify-content: center;
+}
+
+.text-button-content div {
+    margin-left: 1rem;
+    font-size: 12px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+
+.black-card {
+    background-color: #FFF;
+    color: #1D1D1F;
+}
+
+.black-card:hover {
+    background-color: #1D1D1F;
+    color: #FFF;
+}
+
+.card {
+    border: 1px solid #1c1c1c !important;
+}

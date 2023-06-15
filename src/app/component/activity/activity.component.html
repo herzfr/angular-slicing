@@ -1,1 +1,26 @@
-activity-app
+<div id="activity" class="d-flex flex-column flex-grow px-3 my-3">
+    <div class="d-flex justify-content-between">
+        <p class="typegraphy-headline">Activity</p>
+        <span class="col-3 d-grid justify-content-center align-items-center link-prot">View timelines</span>
+    </div>
+    <hr>
+
+    <div class="list-group list-activity">
+        <div class="" *ngFor="let item of ($activity | async)">
+            <div class="card mb-3">
+                <div class="d-flex flex-row flex-lg-row black-card">
+                    <div class="col-md-4 d-grid justify-content-center align-content-center p-2">
+                        <img [src]="item.image" class="img-fluid rounded-start img-activity" [alt]="item.name">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{{item.name}}</h5>
+                            <p class="card-text text-comment">{{ item.comment }}</p>
+                            <p class="card-text"><small class="text-body-secondary">{{ item.post_date }}</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,74 @@
+:root {
+    --full-dark: #000000;
+    --hard-grey: #161617c8;
+    --soft-grey: #6e6e73c1;
+    --bg-secondary: #FBFBFD;
+    --text-second: #6E6E73;
+    --text-white: #F5F5F7;
+    --link-color: #0066CC;
+    --red-line: #B11D22;
+    --bg-primary: #F5F5F7;
+}
+
+.bg-soft-grey {
+    background-color: var(--bg-secondary);
+}
+
+.bg-dark-hard {
+    background-color: var(--full-dark);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.link-prot {
+    cursor: pointer;
+    color: var(--link-color);
+}
+
+.typegraphy-headline {
+    font-size: 44px;
+    line-height: 1.0909090909;
+    font-weight: 600;
+    letter-spacing: -0.002em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin-bottom: 0;
+}
+
+.typegraphy-headline-second {
+    color: var(--text-white);
+    font-size: 44px;
+    line-height: 1.0909090909;
+    font-weight: 600;
+    letter-spacing: -0.002em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin-bottom: 0;
+}
+
+html,
+body {
+    /* height: 100%; */
+    width: 100vw;
+    overflow-x: hidden;
+    /* Centers the class */
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* You can add global styles to this file, and also import other style files */
+::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffc107;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}

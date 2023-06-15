@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { IChannel } from 'src/app/interfaces/all.interface';
+import { AllService } from 'src/app/services/all.service';
 
 @Component({
     selector: 'channel-app',
@@ -7,7 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ChannelComponent implements OnInit {
-    constructor() { }
+    $channel: Observable<IChannel[]> | undefined;
+    constructor(private _service: AllService) { }
 
-    ngOnInit() { }
+    ngOnInit() {
+        this.getChannel()
+    }
+
+    getChannel() {
+        this.$channel = this._service.fetchChannel()
+    }
 }

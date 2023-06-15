@@ -1,0 +1,52 @@
+[
+	{
+		"company": "Google",
+		"image": "https://www.liveabout.com/thmb/33nCfn6IU9gaj3Sg6YtrmciM_So=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1062183106-5c211e41c9e77c0001a24d14.jpg",
+		"id": "1"
+	},
+	{
+		"company": "Apple",
+		"image": "https://res.cloudinary.com/people-matters/image/upload/q_auto,f_auto/v1637551129/1637551128.jpg",
+		"id": "2"
+	},
+	{
+		"company": "Amazon",
+		"image": "https://assets.aboutamazon.com/dims4/default/32861da/2147483647/strip/true/crop/1600x901+0+83/resize/1320x743!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2Fc3%2F15%2F202c3f54402da5128d962a969b02%2Famazon-nashville-3.jpg",
+		"id": "3"
+	},
+	{
+		"company": "Tesla",
+		"image": "https://media.licdn.com/dms/image/D5612AQEqwgR5cpK54g/article-cover_image-shrink_720_1280/0/1654884622598?e=2147483647&v=beta&t=EVfUuP-s6yxTTbzoAeWrN3_oqNcaYYSgZdbmAILwOuM",
+		"id": "4"
+	},
+	{
+		"company": "Alibaba",
+		"image": "https://image.cnbcfm.com/api/v1/image/106121131-gettyimages-1817201891.jpg?v=1568109531",
+		"id": "5"
+	},
+	{
+		"company": "Gojek",
+		"image": "https://miro.medium.com/v2/resize:fit:1400/1*qDhhZR0gZc8YiLL1DHQGHA.jpeg",
+		"id": "6"
+	},
+	{
+		"company": "Microsoft",
+		"image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/mcaps-en-ie-aboutireland-banner?scl=1",
+		"id": "7"
+	},
+	{
+		"company": "Playstation",
+		"image": "https://www.scbuildersinc.com/wp-content/uploads/2019/04/sony.computer.entertainment_hero.jpg",
+		"id": "8"
+	},
+	{
+		"company": "Nvidia",
+		"image": "https://s3.amazonaws.com/cms.ipressroom.com/219/files/albumcovers/5e1b4666-d7b4-459b-a66a-55af0c1c4de6_thmb.jpg",
+		"id": "9"
+	},
+	{
+		"company": "IBM",
+		"image": "https://images.adsttc.com/media/images/6293/970e/3e4b/3177/a800/006f/newsletter/06_-_IBM_HQ_-_Swoosh_-_Powerhouse_Company_-_Copyright_Plomp___RED_Company.jpg?1653839612",
+		"id": "10"
+	}
+]

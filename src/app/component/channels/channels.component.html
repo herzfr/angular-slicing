@@ -1,1 +1,18 @@
-channel-app
+<div id="channel" class="d-flex flex-column flex-grow px-3 my-3">
+    <div class="d-flex justify-content-between">
+        <p class="typegraphy-headline-second">Channel</p>
+        <span class="col-3 d-grid justify-content-center align-items-center link-prot">Browse all channel</span>
+    </div>
+    <hr>
+
+    <div class="row">
+        <ng-container *ngFor="let item of ($channel | async)">
+            <div class="col-12 col-lg-6 mb-2">
+                <div class="card w-100 h-100">
+                    <img [src]="item.image" class="card-img-top" [alt]="item.image">
+                    <p class="card-text text-image">{{ item.company }}</p>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>

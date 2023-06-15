@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { IPeople } from 'src/app/interfaces/all.interface';
+import { AllService } from 'src/app/services/all.service';
 
 @Component({
     selector: 'people-app',
@@ -7,7 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class PeopleComponent implements OnInit {
-    constructor() { }
+    $people: Observable<IPeople[]> | undefined;
+    constructor(private _service: AllService) { }
 
-    ngOnInit() { }
+    ngOnInit() {
+        this.getPeople()
+    }
+
+    getPeople() {
+        this.$people = this._service.fetchPeople()
+    }
 }

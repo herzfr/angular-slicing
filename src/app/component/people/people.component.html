@@ -1,1 +1,67 @@
-people-app
+<div id="people" class="d-flex flex-column flex-grow px-3 my-3">
+    <div class="d-flex justify-content-between">
+        <p class="typegraphy-headline-second">People</p>
+        <span class="col-3 d-grid justify-content-center align-items-center link-prot">View all</span>
+    </div>
+    <hr>
+
+    <div class="container">
+        <ng-container *ngIf="($people | async) as item">
+            <div class="row mb-2">
+                <div class="col-12 col-sm-8 mb-2 mb-sm-0 cursor-pointer">
+
+                    <div class="card w-100 h-100">
+                        <img [src]="item[0].image" class="card-img-top" [alt]="item[0].image">
+                        <p class="card-text text-image large d-flex flex-column">
+                            <span style="font-size: 1.6rem;">{{item[0].name}}</span>
+                            <span>{{item[0].jobs}}</span>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-4 d-flex flex-column mb-2 mb-sm-0">
+                    <div class="card w-100 h-100 mb-2 mb-sm-0 cursor-pointer">
+                        <img [src]="item[1].image" class="card-img-top" [alt]="item[1].image">
+                        <p class="card-text text-image">{{ item[1].name }}</p>
+                    </div>
+                    <div class="card w-100 h-100 cursor-pointer">
+                        <img [src]="item[2].image" class="card-img-top" [alt]="item[2].image">
+                        <p class="card-text text-image">{{ item[2].name }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-4 mb-2 mb-sm-0 cursor-pointer">
+
+                    <div class="card w-100 h-100">
+                        <img [src]="item[3].image" class="card-img-top" [alt]="item[3].image">
+                        <p class="card-text text-image">{{ item[3].name }}</p>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-4 mb-2 mb-sm-0 cursor-pointer">
+
+                    <div class="card w-100 h-100">
+                        <img [src]="item[4].image" class="card-img-top" [alt]="item[4].image">
+                        <p class="card-text text-image">{{ item[4].name }}</p>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-4 mb-2 mb-sm-0">
+
+                    <div class="card w-100 h-100 justify-content-center cursor-pointer black-card">
+                        <div class="d-flex text-button-content align-items-center">
+                            <i class="bi bi-app-indicator"></i>
+                            <div class="d-flex flex-column">
+                                <span>Show</span>
+                                <span>Your Network</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </ng-container>
+    </div>
+
+</div>

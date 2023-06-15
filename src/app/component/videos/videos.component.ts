@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { IVideo } from 'src/app/interfaces/all.interface';
+import { AllService } from 'src/app/services/all.service';
 
 @Component({
     selector: 'videos-app',
@@ -7,7 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class VideosComponent implements OnInit {
-    constructor() { }
+    $videos: Observable<IVideo[]> | undefined;
+    constructor(private _service: AllService) { }
 
-    ngOnInit() { }
+    ngOnInit() {
+        this.getVideos()
+    }
+
+    getVideos() {
+        this.$videos = this._service.fetchVideos()
+    }
 }

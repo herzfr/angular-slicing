@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { IDocument } from 'src/app/interfaces/all.interface';
+import { AllService } from 'src/app/services/all.service';
 
 @Component({
     selector: 'documents-app',
@@ -7,7 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class DocumentsComponent implements OnInit {
-    constructor() { }
+    $docs: Observable<IDocument[]> | undefined;
+    constructor(private _service: AllService) { }
 
-    ngOnInit() { }
+    ngOnInit() {
+        this.getDocs()
+    }
+
+    getDocs() {
+        this.$docs = this._service.fetchDocument()
+    }
 }

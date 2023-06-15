@@ -6,10 +6,11 @@ import { PeopleComponent } from './people/people.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { ChannelComponent } from './channels/channels.component';
 import { FooterComponent } from './footer/footer.component';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
-    imports: [],
+    imports: [CommonModule],
     exports: [
         NavigationComponent,
         VideosComponent,
