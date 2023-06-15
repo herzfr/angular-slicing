@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { IPeople } from 'src/app/interfaces/all.interface';
-import { AllService } from 'src/app/services/all.service';
+import { AllService } from '../../services/all.service';
+import { IPeople } from '../../interfaces/all.interface';
 
 @Component({
     selector: 'people-app',

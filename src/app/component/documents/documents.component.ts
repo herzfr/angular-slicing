@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { IDocument } from 'src/app/interfaces/all.interface';
-import { AllService } from 'src/app/services/all.service';
+import { AllService } from '../../services/all.service';
+import { IDocument } from '../../interfaces/all.interface';
 
 @Component({
     selector: 'documents-app',
